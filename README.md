@@ -98,3 +98,17 @@ Configure your `claude_desktop_config.json` file:
 (You can find this file from Claude Desktop by going to settings > developer > edit config)
 
 Save and **restart Claude Desktop** to apply changes.
+
+## OpenCode Integration
+
+This MCP server also works with OpenCode. To start the server:
+
+```powershell
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd 'C:\Users\Deano\Documents\opencode projects\linkdin_AI\linkedin-mcp'; npx concurrently 'npm run dev:auth' 'npm run dev'"
+```
+
+Or see `INSTRUCTIONS.md` for detailed setup steps.
+
+Once running, use the LinkedIn tools directly through OpenCode:
+- `linkedin-share-post` - Share a text post to LinkedIn
+- `linkedin-share-link` - Share a link with commentary to LinkedIn
