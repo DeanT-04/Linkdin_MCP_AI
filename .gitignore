@@ -8,6 +8,9 @@ build/
 .env
 tokenStore.json
 
+# instructions (contains sensitive path)
+INSTRUCTIONS.md
+
 # macOS
 .DS_Store
 
